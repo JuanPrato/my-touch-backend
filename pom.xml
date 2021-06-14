@@ -50,7 +50,7 @@
 				<version>0.8.5</version>
 				<configuration>
 					<excludes>
-						<exclude>com/juanprato/mytouch/MyTouchApplication.java</exclude>
+						<exclude>**/MyTouchApplication.class</exclude>
 					</excludes>
 				</configuration>
 				<executions>

@@ -17,10 +17,6 @@ jobs:
         with:
           java-version: 1.8
 
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Build maven
         run: mvn -B package --file pom.xml
 
@@ -30,10 +26,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: org.sonarsource.scanner.maven:sonar
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
       - name: Deploy on heroku
         uses: AkhileshNS/heroku-deploy@v3.8.8
         with:

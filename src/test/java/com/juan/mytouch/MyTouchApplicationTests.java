@@ -1,0 +1,13 @@
+package com.juan.mytouch;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class MyTouchApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

@@ -1,4 +1,4 @@
-package com.juan.mytouch;
+package com.JuanPrato.mytouch;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
